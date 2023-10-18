@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Betting</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="marquee.css">
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-expand-lg sticky-top fw-bolder" style="background-color: #37003C; color: white;">
+            <div class="container-fluid">
+                <a class="navbar-lo" href="index.html">
+                    <img src="logo.png" alt="Sport Betting Logo">
+                </a>
+                <button class="navbar-toggler btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon btn-close-white"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto order-0 navbar-nav-scroll">
+                    <li class="nav-item">
+                    <a class="nav-link text-white active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="free.html">Free</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="paid.html">Paid</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="vip.html">VIP</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="wins.html">Wins</a>
+                    </li>
+                </ul>
+
+                <a class="text-decoration-none text-dark d-flex" href="login.html">
+                    <button class="btn btn-light fw-bold">Login</button>
+                </a>
+                
+                </div>
+            </div>
+    </nav>
+</div>
+    
+    <!-- inserting a centered bootstrap div -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-center">
+                    
+                </div>
+            </div>
+        </div>
+
+    <main>
+        <div class="px-4 py-5 my-5 text-center" style="background-color: #37003C; color: white;">
+            <!-- <img class="d-block mx-auto mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+            <h1 class="display-5 fw-bold">Get in on the Action</h1>
+            <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Place your bets on your favorite sports and win big!</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <a href="./registration.html" class="btn-primary px-4">
+                <button type="button" class="btn btn-outline-success btn-lg px-4">
+                    Join Now
+                </button>
+                </a>
+            </div>
+            </div>
+        </div>
+
+        <div class="b-example-divider"></div>
+
+        <div class="tabs">
+            <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-free-tab" data-bs-toggle="tab" data-bs-target="#nav-free" type="button" role="tab" aria-controls="nav-free" aria-selected="true">Free</button>
+                <button class="nav-link" id="nav-paid-tab" data-bs-toggle="tab" data-bs-target="#nav-paid" type="button" role="tab" aria-controls="nav-paid" aria-selected="false">Paid</button>
+                <button class="nav-link" id="nav-vip-tab" data-bs-toggle="tab" data-bs-target="#nav-vip" type="button" role="tab" aria-controls="nav-vip" aria-selected="false">VIP</button>
+                <button class="nav-link" id="nav-wins-tab" data-bs-toggle="tab" data-bs-target="#nav-wins" type="button" role="tab" aria-controls="nav-wins" aria-selected="false">Wins</button>
+
+            </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-free" role="tabpanel" aria-labelledby="nav-free-tab">
+                <section id="featured-matches"> <!-- PremierSans-Heavy, Arial, Helvetica Neue, Helvetica, sans-serif -->
+            
+            <div class="card bg-dark text-white" style="max-width: 100%;">
+                <img src="herobg.png" class="card-img" alt="Stony Beach"/>
+                <div class="card-img-overlay">
+                    <h1 class="card-title">Free Matches</h1>
+            
+                </div>
+            </div>
+            <hr>
+            <p class="mx-auto fw-bold">Sat 21 Oct 2023</p>
+            <!-- Featured Match 1 -->
+            
+            <div class="card border-start-0 border-end-0 border-top-0">
+                
+                <div class="card-body">
+                    <p class="col text-center fw-bold">Team A : Team B</p>
+                    <div class="row row-cols-3 g-3">
+                        <a href="#" class="col text-center">
+                            <button class="btn btn-outline-info" type="button"> Team A </button>
+                        </a>
+                            
+                        <a href="#" class="col col-md-4 text-center">
+                            <button class="btn btn-outline-info" type="button">Draw</button>
+                        </a>
+
+                        <a href="#" class="col col-md-4 text-center ">
+                            <button class="btn btn-outline-info" type="button">Team B</button>
+                        </a>
+                            
+                    </div>
+                    <div class="row row-cols-3 g3">
+                        <p class="col text-center">2.0</p>                        
+                        <p class="col text-center">Odds</p>
+                        <p class="col text-center">3.0</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Match 2 -->
+
+            <div class="card border-start-0 border-end-0 border-top-0">
+                
+                <div class="card-body">
+                    <div class="row row-cols-3 g3">
+                        <button class="col btn btn-outline-info" type="button"> Team Y </button>
+                        <p class="col text-center fw-bold">Team X : Team Y</p>
+                        <button class="col btn btn-outline-info" type="button">Team X</button>
+                    </div>
+                    <div class="row row-cols-3 g3">
+                        <p class="col text-center">1.5</p>                        
+                        <p class="col text-center">Odds</p>
+                        <p class="col text-center">2.5</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Match 3 -->
+
+            <div class="card border-start-0 border-end-0 border-top-0">
+                
+                <div class="card-body">
+                    <div class="row row-cols-3 g3">
+                        <button class="col btn btn-outline-info" type="button"> Team D </button>
+                        <p class="col text-center fw-bold">Team C : Team D</p>
+                        <button class="col btn btn-outline-info" type="button">Team C</button>
+                    </div>
+                    <div class="row row-cols-3 g3">
+                        <p class="col text-center">1.8</p>                        
+                        <p class="col text-center">Odds</p>
+                        <p class="col text-center">2.2</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Match 4 -->
+
+            <div class="card border-start-0 border-end-0 border-top-0">
+                
+                <div class="card-body">
+                    <div class="row row-cols-3 g3">
+                        <button class="col btn btn-outline-info" type="button"> Team N </button>
+                        <p class="col text-center fw-bold">Team M : Team N</p>
+                        <button class="col btn btn-outline-info" type="button">Team M</button>
+                    </div>
+                    <div class="row row-cols-3 g3">
+                        <p class="col text-center">2.1</p>                        
+                        <p class="col text-center">Odds</p>
+                        <p class="col text-center">2.9</p>
+                    </div>
+                </div>
+            </div>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="nav-paid" role="tabpanel" aria-labelledby="nav-paid-tab">
+                <section id="upcoming-matches">
+            <div class="card bg-dark text-white" style="max-width: 100%;">
+                <img src="herobg.png" class="card-img" alt="Stony Beach"/>
+                <div class="card-img-overlay">
+                    <h1 class="card-title">Paid Matches</h1>
+            
+                </div>
+            </div>
+            <hr>
+            <p class="mx-auto fw-bold">Sun 29 Oct 2023</p>
+            <!-- Upcoming Match 1 -->
+
+            <div class="card border-start-0 border-end-0 border-top-0">
+                
+                <div class="card-body">
+                    <div class="row row-cols-3 g3">
+                        <button class="col btn btn-outline-info" type="button"> Team Q </button>
+                        <p class="col text-center fw-bold">Team P : Team Q</p>
+                        <button class="col btn btn-outline-info" type="button">Team P</button>
+                    </div>
+                    <div class="row row-cols-3 g3">
+                        <p class="col text-center">2.2</p>                        
+                        <p class="col text-center">Odds</p>
+                        <p class="col text-center">2.8</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Match 2 -->
+
+            <div class="card border-start-0 border-end-0 border-top-0">
+                
+                <div class="card-body">
+                    <div class="row row-cols-3 g3">
+                        <button class="col btn btn-outline-info" type="button"> Team S </button>
+                        <p class="col text-center fw-bold">Team R : Team S</p>
+                        <button class="col btn btn-outline-info" type="button">Team R</button>
+                    </div>
+                    <div class="row row-cols-3 g3">
+                        <p class="col text-center">1.6</p>                        
+                        <p class="col text-center">Odds</p>
+                        <p class="col text-center">2.7</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Match 3 -->
+
+            <div class="card border-start-0 border-end-0 border-top-0">
+                
+                <div class="card-body">
+                    <div class="row row-cols-3 g3">
+                        <button class="col btn btn-outline-info" type="button"> Team U </button>
+                        <p class="col text-center fw-bold">Team T : Team U</p>
+                        <button class="col btn btn-outline-info" type="button">Team T</button>
+                    </div>
+                    <div class="row row-cols-3 g3">
+                        <p class="col text-center">1.9</p>                        
+                        <p class="col text-center">Odds</p>
+                        <p class="col text-center">2.3</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Match 4 -->
+
+            <div class="card border-0">
+                
+                <div class="card-body">
+                    <div class="row row-cols-3 g3">
+                        <button class="col btn btn-outline-info" type="button"> Team W </button>
+                        <p class="col text-center fw-bold">Team V : Team W</p>
+                        <button class="col btn btn-outline-info" type="button">Team V</button>
+                    </div>
+                    <div class="row row-cols-3 g3">
+                        <p class="col text-center">2.0</p>                        
+                        <p class="col text-center">Odds</p>
+                        <p class="col text-center">3.0</p>
+                    </div>
+                </div>
+            </div>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="nav-vip" role="tabpanel" aria-labelledby="nav-vip-tab">
+                <section id="subscription-options">
+
+
+                <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4">VIP</h1>
+      <p class="lead">Choose Your Subscription</p>
+    </div>
+
+    <div class="container">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Premium Subscription</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">Ksh 900 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Access to Premium Tips</li>
+              <li>Access to Fixed Matches</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-success">Pay with Mpesa</button>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Pay with Flutterwave</button>
+          </div>
+        </div>
+
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Lite Subscription</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">Ksh 600 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Access to Lite Tips</li>
+              <li>Access to Fixed Matches</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-success">Pay with Mpesa</button>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Pay with Flutterwave</button>
+          </div>
+        </div>
+
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Fixed Matches Subscription</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">Ksh 2000 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Access to fixed matches only.</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-success">Pay with Mpesa</button>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Pay with Flutterwave</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+               
+
+
+            </section>
+            </div>
+            </div>
+            <div class="tab-pane fade" id="nav-wins" role="tabpanel" aria-labelledby="nav-wis-tab">
+                <h1>30 Football Matches</h1>
+    
+
+                <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Match</th>
+                            <th>Teams</th>
+                            <th>Full Time Result</th>
+                        </tr>
+                    </thead>
+                    <tbody id="match-results">
+                        <!-- Results will be generated here -->
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+
+        <div class="b-example-divider"></div>
+
+        
+    </main>
+    <div style="position:fixed; bottom:0px;">
+        <div class="promo-carousel" id="grouploop-1">
+    		<div class="item-wrap">
+    		</div>
+	    </div>
+    </div>
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: #37003C; color: white;">
+    © 2023 Copyright:
+    Sport Betting
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+<script src="main.js"></script>
+<script src="jquery.js"></script>
+<script src="grouploop.js"></script>
+<script>
+        $(document).ready(function(){
+           
+				
+					
+					$('.item-wrap').append('<div class="item active bounceme" style="width: 30px;"><a href="#">Over 80% Win rate</a></div>');
+					$('.item-wrap').append('<div class="item"><a href="#">Guaranteed Profit</a></div>');
+					$('.item-wrap').append('<div class="item"><a href="#">Expert Analysis</a></div>');
+					$('.item-wrap').append('<div class="item"><a href="#">Proven History</a></div>');
+					$('.item-wrap').append('<div class="item"><a href="#">Mpesa Allowed</a></div>');
+					$('.item-wrap').append('<div class="item"><a href="#">Pay via Paybill</a></div>');
+					
+					$('.item-wrap').append('<div class="item" style="visibility: none;"><a href="#">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </a></div>');
+			
+				
+			
+			
+            $('#grouploop-1').grouploop({
+				velocity: 1,
+				forward: false,
+				pauseOnHover: true,
+				childNode: ".item",
+				childWrapper: ".item-wrap",
+				complete: function () { console.log("Initialized a grouploop with id: " + $(this).attr('id')) },
+				stickFirstItem: true
+			});
+		
+            
+            $('.expert_analysis').click(function(){
+                var comm = '#comm_id_'+$(this).attr("id");
+              if ( $(comm).css('visibility') == 'hidden' )
+                $(comm).css({
+                                   'visibility' : 'visible',
+                                   'height' : 'auto',
+                                   'padding': '5px;',
+                                   'color': 'white'
+                                });
+              else
+                $(comm).css({
+                                   'visibility' : 'hidden',
+                                   'height' : '0px'
+                                });
+            });
+			
+			setInterval(function() 
+            {
+              $(".bounceme").animate({
+                    width: "210px",
+                    opacity: 1,
+                    fontSize: "20px",
+                    borderWidth: "0px"
+                  }, 800 );
+                 $(".bounceme").animate({
+                    width: "200px",
+                    opacity: 1,
+                    fontSize: "16px",
+                    borderWidth: "0px"
+                  }, 1000 );
+             },5000)
+        });
+    </script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+        // Function to generate a random full-time result (e.g., "2-1")
+        function generateResult() {
+            const homeGoals = Math.floor(Math.random() * 6); // Random number between 0 and 5
+            const awayGoals = Math.floor(Math.random() * 6); // Random number between 0 and 5
+            return `${homeGoals}-${awayGoals}`;
+        }
+
+        // Create 30 football match rows with random results
+        const matchResultsTable = document.getElementById('match-results');
+        for (let i = 1; i <= 30; i++) {
+            const matchResult = generateResult();
+            const row = document.createElement('tr');
+            const matchNumberCell = document.createElement('td');
+            const teamsCell = document.createElement('td');
+            const resultCell = document.createElement('td');
+
+            matchNumberCell.textContent = `Match ${i}`;
+            // Generate random team names for England
+            const teams = ["Manchester United", "Arsenal", "Liverpool", "Chelsea", "Manchester City", "Tottenham Hotspur", "Leicester City", "Everton", "West Ham United", "Leeds United", "Aston Villa", "Wolverhampton Wanderers", "Crystal Palace", "Southampton", "Brighton & Hove Albion", "Newcastle United"];
+            const homeTeamIndex = Math.floor(Math.random() * teams.length);
+            let awayTeamIndex;
+            do {
+                awayTeamIndex = Math.floor(Math.random() * teams.length);
+            } while (awayTeamIndex === homeTeamIndex);
+            const teamsText = `${teams[homeTeamIndex]} vs. ${teams[awayTeamIndex]}`;
+            teamsCell.textContent = teamsText;
+            resultCell.textContent = matchResult;
+
+            row.appendChild(matchNumberCell);
+            row.appendChild(teamsCell);
+            row.appendChild(resultCell);
+            matchResultsTable.appendChild(row);
+        }
+    </script>
+
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
+    <div class="elfsight-app-dced39cc-30ef-4c3a-9907-d253d3b468bd"></div>
+
+    <!-- JavaScript for Register and Login buttons -->
+    <!-- <script>
+        // Function to handle the click event on the "Register" button
+        document.getElementById("register-button").addEventListener("click", function () { // Replace this with your actual registration logic or link
+            alert("You clicked 'Register'. Registration logic goes here.");
+        });
+
+        // Function to handle the click event on the "Login" button
+        document.getElementById("login-button").addEventListener("click", function () { // Replace this with your actual login logic or link
+            alert("You clicked 'Login'. Login logic goes here.");
+        });
+    </script> -->
+
+    
+</body>
+</html>
