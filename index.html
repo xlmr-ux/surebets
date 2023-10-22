@@ -6,20 +6,56 @@
     <title>Sport Betting</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Link to your CSS file -->
     <link rel="stylesheet" href="marquee.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> <!-- Link to your CSS file -->
+    <style>
+        .form-control {
+      border-color: #05abe0;
+}
+
+        .hr-text {
+        border: 0;
+        line-height: 1em;
+        position: relative;
+        text-align: center;
+        height: 1.5em;
+        font-size: 14px;
+        margin: 30px 15px;
+        }
+
+        .hr-text::before {
+            content: "";
+            background: linear-gradient(to right, transparent, rgb(22, 21, 21), transparent);
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: 1px;
+        }
+
+        .hr-text::after {
+            content: attr(data-content);
+            position: relative;
+            padding: 0 7px;
+            line-height: 1.5em;
+            color: #37003C;
+            background-color: white;
+        }
+
+    </style>
 </head>
 <body>
 <div>
     <nav class="navbar navbar-expand-lg sticky-top fw-bolder" style="background-color: #37003C; color: white;">
             <div class="container-fluid">
-                <a class="navbar-lo" href="index.html">
-                    <img src="logo.png" alt="Sport Betting Logo">
+                <a class="navbar-brand" href="index.html">
+                    <img src="logo.png" alt="Sport Betting Logo" width="50%">
                 </a>
                 <button class="navbar-toggler btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon btn-close-white"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto order-0 navbar-nav-scroll">
-                    <li class="nav-item">
+                <ul class="navbar-nav mx-auto  navbar-nav-scroll">
+                    <!-- <li class="nav-item">
                     <a class="nav-link text-white active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
@@ -33,11 +69,15 @@
                     </li>
                     <li class="nav-item">
                     <a class="nav-link text-white" href="wins.html">Wins</a>
-                    </li>
+                    </li> -->
                 </ul>
 
-                <a class="text-decoration-none text-dark d-flex" href="login.html">
+                <a class="text-decoration-none text-dark d-flex m-1" href="index.html">
                     <button class="btn btn-light fw-bold">Login</button>
+                </a>
+
+                <a class="text-decoration-none text-dark d-flex" href="registration.html">
+                    <button class="btn btn-light fw-bold">Register</button>
                 </a>
                 
                 </div>
@@ -56,7 +96,7 @@
         </div>
 
     <main>
-        <div class="px-4 py-5 my-5 text-center" style="background-color: #37003C; color: white;">
+        <div class="px-4 py-5 my-5 text-center" style="background: linear-gradient(to bottom, #87e0fd 0%,#53cbf1 40%,#05abe0 100%); color: white;">
             <!-- <img class="d-block mx-auto mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
             <h1 class="display-5 fw-bold">Get in on the Action</h1>
             <div class="col-lg-6 mx-auto">
@@ -76,22 +116,69 @@
         <div class="tabs">
             <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-free-tab" data-bs-toggle="tab" data-bs-target="#nav-free" type="button" role="tab" aria-controls="nav-free" aria-selected="true">Free</button>
-                <button class="nav-link" id="nav-paid-tab" data-bs-toggle="tab" data-bs-target="#nav-paid" type="button" role="tab" aria-controls="nav-paid" aria-selected="false">Paid</button>
-                <button class="nav-link" id="nav-vip-tab" data-bs-toggle="tab" data-bs-target="#nav-vip" type="button" role="tab" aria-controls="nav-vip" aria-selected="false">VIP</button>
-                <button class="nav-link" id="nav-wins-tab" data-bs-toggle="tab" data-bs-target="#nav-wins" type="button" role="tab" aria-controls="nav-wins" aria-selected="false">Wins</button>
+                <button class="nav-link active m-1" id="nav-signin-tab" data-bs-toggle="tab" data-bs-target="#nav-signin" type="button" role="tab" aria-controls="nav-signin" aria-selected="true">Sign In</button>
+                <button class="nav-link m-1" style="background-color: #00FD96; color: #37003C;" id="nav-free-tab" data-bs-toggle="tab" data-bs-target="#nav-free" type="button" role="tab" aria-controls="nav-free" aria-selected="true">Free</button>
+                <button class="nav-link m-1" style="background-color: #00FD96; color: #37003C;" id="nav-paid-tab" data-bs-toggle="tab" data-bs-target="#nav-paid" type="button" role="tab" aria-controls="nav-paid" aria-selected="false">Paid</button>
+                <button class="nav-link m-1" style="background-color: #00FD96; color: #37003C;" id="nav-vip-tab" data-bs-toggle="tab" data-bs-target="#nav-vip" type="button" role="tab" aria-controls="nav-vip" aria-selected="false">VIP</button>
+                <button class="nav-link m-1" style="background-color: #00FD96; color: #37003C;" id="nav-wins-tab" data-bs-toggle="tab" data-bs-target="#nav-wins" type="button" role="tab" aria-controls="nav-wins" aria-selected="false">Wins</button>
 
             </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-free" role="tabpanel" aria-labelledby="nav-free-tab">
+            <div class="tab-pane fade show active" id="nav-signin" role="tabpanel" aria-labelledby="nav-signin-tab">
+                <section class="card" id="signin"> <!-- PremierSans-Heavy, Arial, Helvetica Neue, Helvetica, sans-serif -->
+            
+            
+            <br>
+            <h1 class="card-title mx-auto fw-bold">Sign In</h1>
+            
+            <!-- Write a bootstrap login form -->
+                    <div class="border-0 card-body">
+                        <form action="" id="loginForm">
+                            <label for="email">Email</label>
+                            <div class="form-group">
+                                <input type="email" class="form-control bg-light border-top-0 border-start-0 border-end-0 rounded" name="email" id="email">
+                            </div>
+                            <br>
+                            <label for="password">Password</label>
+                            <div class="form-group">
+                                <input type="password" class="form-control bg-light border-top-0 border-start-0 border-end-0" name="password" id="password">
+                            </div>
+
+                            <br>
+                            <button class="btn btn-primary btn-outline-light" type="submit" style="background: linear-gradient(to right, #00FD96 0%,#01F7C0 40%,#05abe0 100%);">Sign In</button>
+                        </form>
+
+                        <br>
+
+                        <p class="text-center">Forgot your Password? <a href="#">Reset here</a></p>
+
+                        <br>
+
+                        <!-- add horizontal line with text between -->
+                        <hr class="hr-text gradient" data-content="or login with">
+
+                        <br>
+
+                        <!-- add social media icons -->
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="btn btn-outline-primary btn-floating m-1" role="button"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="btn btn-outline-danger btn-floating m-1" role="button"><i class="fa fa-google"></i></a>
+                            <a href="#" class="btn btn-outline-info btn-floating m-1" role="button"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="btn btn-outline-success btn-floating m-1" role="button"><i class="fa fa-apple"></i></a>
+                    </div>
+                    
+                </section>
+            </div>
+            <div class="tab-pane fade" id="nav-free" role="tabpanel" aria-labelledby="nav-free-tab">
                 <section id="featured-matches"> <!-- PremierSans-Heavy, Arial, Helvetica Neue, Helvetica, sans-serif -->
             
-            <div class="card bg-dark text-white" style="max-width: 100%;">
+            <div class="card text-white" style="max-width: 100%; background-image: url(herobg.png);">
+                <br>
                 <img src="herobg.png" class="card-img" alt="Stony Beach"/>
                 <div class="card-img-overlay">
                     <h1 class="card-title">Free Matches</h1>
-            
+                    
                 </div>
             </div>
             <hr>
@@ -181,7 +268,8 @@
             </div>
             <div class="tab-pane fade" id="nav-paid" role="tabpanel" aria-labelledby="nav-paid-tab">
                 <section id="upcoming-matches">
-            <div class="card bg-dark text-white" style="max-width: 100%;">
+            <div class="card bg-dark text-white" style="max-width: 100%; background-image: url(herobg.png);">
+                <br>
                 <img src="herobg.png" class="card-img" alt="Stony Beach"/>
                 <div class="card-img-overlay">
                     <h1 class="card-title">Paid Matches</h1>
@@ -276,26 +364,12 @@
       <div class="card-deck mb-3 text-center">
         <div class="card mb-4 box-shadow">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Premium Subscription</h4>
+            <h4 class="my-0 font-weight-normal">Subscription Matches</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">Ksh 900 <small class="text-muted">/ mo</small></h1>
+            <!-- <h1 class="card-title pricing-card-title">Ksh 900 <small class="text-muted">/ mo</small></h1> -->
             <ul class="list-unstyled mt-3 mb-4">
               <li>Access to Premium Tips</li>
-              <li>Access to Fixed Matches</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-success">Pay with Mpesa</button>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Pay with Flutterwave</button>
-          </div>
-        </div>
-
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Lite Subscription</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">Ksh 600 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
               <li>Access to Lite Tips</li>
               <li>Access to Fixed Matches</li>
             </ul>
@@ -306,10 +380,42 @@
 
         <div class="card mb-4 box-shadow">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Fixed Matches Subscription</h4>
+            <h4 class="my-0 font-weight-normal">SportPesa Jackpot</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">Ksh 2000 <small class="text-muted">/ mo</small></h1>
+            <!-- <h1 class="card-title pricing-card-title">Ksh 600 <small class="text-muted">/ mo</small></h1> -->
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Access to Premium Tips</li>
+              <li>Access to Lite Tips</li>
+              <li>Access to Fixed Matches</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-success">Pay with Mpesa</button>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Pay with Flutterwave</button>
+          </div>
+        </div>
+
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Betika Jackpot</h4>
+          </div>
+          <div class="card-body">
+            <!-- <h1 class="card-title pricing-card-title">Ksh 600 <small class="text-muted">/ mo</small></h1> -->
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Access to Premium Tips</li>
+              <li>Access to Lite Tips</li>
+              <li>Access to Fixed Matches</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-success">Pay with Mpesa</button>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Pay with Flutterwave</button>
+          </div>
+        </div>
+
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Fixed Matches</h4>
+          </div>
+          <div class="card-body">
+            <!-- <h1 class="card-title pricing-card-title">Ksh 2000 <small class="text-muted">/ mo</small></h1> -->
             <ul class="list-unstyled mt-3 mb-4">
               <li>Access to fixed matches only.</li>
             </ul>
@@ -323,7 +429,7 @@
                
 
 
-            </section>
+                </section>
             </div>
             </div>
             <div class="tab-pane fade" id="nav-wins" role="tabpanel" aria-labelledby="nav-wis-tab">

@@ -5,6 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sport Betting</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> <!-- Link to your CSS file -->
+    <style>
+        .form-control {
+      border-color: #05abe0;
+}
+
+        .hr-text {
+        border: 0;
+        line-height: 1em;
+        position: relative;
+        text-align: center;
+        height: 1.5em;
+        font-size: 14px;
+        margin: 30px 15px;
+        }
+
+        .hr-text::before {
+            content: "";
+            background: linear-gradient(to right, transparent, rgb(22, 21, 21), transparent);
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: 1px;
+        }
+
+        .hr-text::after {
+            content: attr(data-content);
+            position: relative;
+            padding: 0 7px;
+            line-height: 1.5em;
+            color: #37003C;
+            background-color: white;
+        }
+    </style>
 </head>
 <body>
 <div>
@@ -43,50 +78,82 @@
             </div>
     </nav>
 </div>
+    <!-- <br>
     <br>
-    <br>
 
-    <div class="b-example-divider"></div>
+    <div class="b-example-divider"></div> -->
 
-        <section id="upcoming-matches">
-            <div class="card bg-dark text-white" style="max-width: 100%;">
-                <img src="loginbg.png" class="card-img" alt="Stony Beach"/>
-                <div class="card-img-overlay">
-                    <h1 class="card-title">Register Your Account</h1>
+        <div class="tabs">
+            <nav style="background: linear-gradient(to bottom, #87e0fd 0%,#53cbf1 40%,#05abe0 100%);">
             <br>
-                </div>
-            </div>
             <br>
-    
-    <div class="container">
-        <form>
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-                <input type="email" id="form2Example1" class="form-control border-top-0 border-start-0 border-end-0" />
-                <label class="form-label" for="form2Example1">Email address</label>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <!-- <button class="nav-link active m-1" style="background-color: #00FD96; color: #37003C;" id="nav-signin-tab" data-bs-toggle="tab" data-bs-target="#nav-signin" type="button" role="tab" aria-controls="nav-signin" aria-selected="true">Sign In</button> -->
+                <button class="nav-link m-1" style="background-color: #00FD96; color: #37003C;" id="nav-signup-tab" data-bs-toggle="tab" data-bs-target="#nav-signup" type="button" role="tab" aria-controls="nav-signup" aria-selected="false">Register</button>
             </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+            
+            <div class="tab-pane fade show active" id="nav-signup" role="tabpanel" aria-labelledby="nav-signup-tab">
+                <section class="card" id="signup"> <!-- PremierSans-Heavy, Arial, Helvetica Neue, Helvetica, sans-serif -->
+            
+            
+            <br>
+            <h1 class="card-title mx-auto fw-bold">Sign Up</h1>
+            
+            <!-- Write a bootstrap login form -->
+                    <div class="border-0 card-body">
+                        <form action="" id="registrationForm">
+                            <label for="regemail">Email</label>
+                            <div class="form-group">
+                                <input type="email" class="form-control bg-light border-top-0 border-start-0 border-end-0 rounded" name="regemail" id="regemail">
+                            </div>
+                            <br>
+                            <label for="regusername">Username</label>
+                            <div class="form-group">
+                                <input type="text" class="form-control bg-light border-top-0 border-start-0 border-end-0" name="regusername" id="regusername">
+                            </div>
+                            <br>
+                            <label for="regphone">Phone</label>
+                            <div class="form-group">
+                                <input type="tel" class="form-control bg-light border-top-0 border-start-0 border-end-0" name="regphone" id="regphone">
+                            </div>
+                            <br>
+                            <label for="regpassword">Password</label>
+                            <div class="form-group">
+                                <input type="password" class="form-control bg-light border-top-0 border-start-0 border-end-0" name="regpassword" id="regpassword">
+                            </div>
 
-            <!-- Password input -->
-            <div class="form-outline mb-4">
-                <input type="password" id="form2Example2" class="form-control border-top-0 border-start-0 border-end-0" />
-                <label class="form-label" for="form2Example2">Password</label>
+                            <br>
+                            <button class="btn btn-primary btn-outline-light" type="submit" style="background: linear-gradient(to right, #00FD96 0%,#01F7C0 40%,#05abe0 100%);">Sign Up</button>
+                        </form>
+
+                        <br>
+
+                        <!-- <p class="text-center">Already a member? <a href="#l">Login</a></p> -->
+
+                        <br>
+
+                        <!-- add horizontal line with text between -->
+                        <hr class="hr-text gradient" data-content="or sign up with">
+
+                        <br>
+
+                        <!-- add social media icons -->
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="btn btn-outline-primary btn-floating m-1" role="button"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="btn btn-outline-danger btn-floating m-1" role="button"><i class="fa fa-google"></i></a>
+                            <a href="#" class="btn btn-outline-info btn-floating m-1" role="button"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="btn btn-outline-success btn-floating m-1" role="button"><i class="fa fa-apple"></i></a>
+                    </div>
+                    
+                </section>
             </div>
+            
+        </div>
+        
 
-            <div class="form-outline mb-4">
-                <input type="password" id="form2Example2" class="form-control border-top-0 border-start-0 border-end-0" />
-                <label class="form-label" for="form2Example2">Confirm Password</label>
-            </div>
-
-            <!-- Submit button -->
-            <button type="button" class="btn btn-primary btn-block mb-2">Sign up</button>
-
-            <!-- Login buttons -->
-            <div class="text-center">
-                <p>Already have an account? <a href="login.html">Login</a></p>
-                
-            </div>
-        </form>
-    </div>
+        <div class="b-example-divider"></div>
     
     <footer class="text-center text-lg-start bg-light text-muted">
         
