@@ -1,0 +1,994 @@
+.fixtures__date-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .8rem;
+    padding: 0 .8rem
+}
+
+.fixtures__date {
+    font-family: PremierSans-Heavy,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: -.04rem;
+    color: #37003c
+}
+
+.fixtures__date--long {
+    display: block
+}
+
+.fixtures__date--short {
+    display: none
+}
+
+.fixtures__date {
+    margin-bottom: .8rem
+}
+
+@media (max-width: 1023px) {
+    .fixtures__matches-list {
+        margin-bottom:1.2rem
+    }
+
+    .fixtures__content-container {
+        padding: 0 .8rem
+    }
+
+    .fixtures__date-content-container {
+        padding: 0
+    }
+
+    .fixtures__date {
+        font-size: 1.6rem;
+        line-height: 2.4rem
+    }
+
+    .fixtures__date--long {
+        display: none
+    }
+
+    .fixtures__date--short {
+        display: block
+    }
+
+    .fixtures__competition-logo {
+        max-height: 2.8rem
+    }
+
+    .fixtures .refereeHeader {
+        display: none
+    }
+}
+
+@media (max-width: 1023px) {
+    
+    .fixtures__date {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        letter-spacing: -.04rem
+    }
+
+    .tbc-accordion__total-items {
+        width: auto;
+        line-height: 2.1rem;
+        font-size: 1.4rem
+    }
+
+    .tbc-accordion__competition-logo-container {
+        margin: .8rem 0
+    }
+
+    .tbc-accordion__competition-logo {
+        max-height: 2.8rem
+    }
+
+    .tbc-accordion:after {
+        display: none
+    }
+
+    .tbc-accordion .competitionContainer .competitionTitle {
+        width: auto;
+        height: auto
+    }
+
+    .tbc-accordion .date.long {
+        display: block!important;
+        margin-bottom: 0
+    }
+
+    .tbc-accordion .date.short {
+        display: none!important
+    }
+}
+
+.fixtures__competition-logo {
+    max-height: 3rem;
+    width: auto;
+    overflow: hidden
+}
+
+@media (max-width: 1023px) {
+    .fixtures__competition-logo.U18 {
+        max-width:13rem
+    }
+}
+
+.tbc-accordion__competition-logo-container {
+    display: block;
+    width: 100%;
+    text-align: right;
+    margin: 1.2rem 0
+}
+
+.tbc-accordion__competition-logo {
+    max-height: 3rem;
+    width: auto
+}
+
+.logo-container {
+    width: 4rem;
+    height: 4rem;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.league-table__comp-logo-container {
+    margin-bottom: 1.6rem;
+    padding-left: .8rem
+}
+
+@media (max-width: 840px) {
+    .u-hide-tablet {
+        display:none!important
+    }
+}
+
+.fixtures__matches-list {
+    margin-bottom: 3.2rem;
+    position: relative
+}
+
+.matchList {
+    margin-bottom: 1.6rem!important
+}
+
+.matchList:first-of-type {
+    border-top: 0
+}
+
+.match-fixture {
+    text-decoration: none;
+    top: 0!important;
+    width: 100%;
+    position: relative
+}
+
+.fixtures-modal .past-matches .fixtures-modal__col .match-fixture .badge {
+    position: relative;
+    margin-top: 0;
+    top: 0;
+    width: 2.7rem
+}
+
+.tooltipContainer.tooltip-link:focus .match-fixture,.tooltipContainer.tooltip-link:focus .match-fixture__match-info,.tooltipContainer.tooltip-link:hover .match-fixture,.tooltipContainer.tooltip-link:hover .match-fixture__match-info {
+    color: #fff
+}
+
+.tooltipContainer.tooltip-link:focus .match-fixture [class*=arrow-right],.tooltipContainer.tooltip-link:hover .match-fixture [class*=arrow-right] {
+    transform: scale(.7) translateX(5px);
+    right: .9rem
+}
+
+.tooltipContainer .match-fixture {
+    background-color: transparent;
+    padding: .8rem 1rem;
+    border-radius: .3rem;
+    min-width: 17.8rem;
+    border: none!important
+}
+
+.tooltipContainer .match-fixture:hover .icn {
+    transform: none
+}
+
+.tooltipContainer .match-fixture--small:hover.match-fixture {
+    background: none
+}
+
+.tooltipContainer .match-fixture [class*=arrow-right] {
+    bottom: 1.8rem;
+    right: 1.1rem;
+    margin-bottom: 0;
+    transition: transform .2s
+}
+
+.previous-meetings .match-fixture__container {
+    justify-content: center
+}
+
+.previous-meetings .match-fixture__container:hover .icn {
+    fill: #fff
+}
+
+.previous-meetings .match-fixture__team {
+    text-align: left
+}
+
+.fixtures-modal .past-matches .fixtures-modal__col .match-fixture__container {
+    max-width: 29.1rem;
+    margin: 0 auto;
+    padding: .9rem 0;
+    border-radius: .4rem;
+    border: .1rem solid #ebe5eb
+}
+
+.fixtures-modal .past-matches .fixtures-modal__col .match-fixture__container:hover .arrow-right-purple {
+    background-image: url(../i/elements/icons/arrow-forward-white.svg)
+}
+
+.match-fixture__wrapper:not(.disabled):focus .match-fixture__container,.match-fixture__wrapper:not(.disabled):hover .match-fixture__container {
+    color: #fff;
+    background: linear-gradient(98.5deg,#05f0ff -46.16%,#7367ff 42.64%,#963cff 70.3%)
+}
+
+.match-fixture__wrapper {
+    display: block;
+    color: #37003c;
+    text-decoration: none;
+    position: relative
+}
+
+.match-fixture__wrapper.disabled {
+    pointer-events: none
+}
+
+
+.match-fixture__wrapper:not(.disabled):focus .match-fixture__end-icon,.match-fixture__wrapper:not(.disabled):hover .match-fixture__end-icon {
+    margin-right: .8rem;
+    margin-left: 1.6rem
+}
+
+.match-fixture__wrapper:not(.disabled):focus .match-fixture__end-icon .svg,.match-fixture__wrapper:not(.disabled):focus .match-fixture__stadium-icon .svg,.match-fixture__wrapper:not(.disabled):hover .match-fixture__end-icon .svg,.match-fixture__wrapper:not(.disabled):hover .match-fixture__stadium-icon .svg {
+    fill: #fff
+}
+
+.match-fixture__wrapper.live .match-fixture__score {
+    font-family: PremierSans-Heavy,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 400
+}
+
+.match-fixture__wrapper.live .match-fixture__score,.match-fixture__wrapper.live:focus .match-fixture__container,.match-fixture__wrapper.live:hover .match-fixture__container {
+    background: linear-gradient(245.98deg,#ff6900 -48.99%,#ff6604 -32.53%,#ff6010 -14.01%,#ff5625 4.51%,#ff4743 23.03%,#ff3468 41.55%,#ff2882 53.89%,#963cff 156.77%)
+}
+
+.match-fixture__wrapper.live:focus .match-fixture__score,.match-fixture__wrapper.live:hover .match-fixture__score {
+    background: #fff;
+    color: #37003c
+}
+
+.match-fixture__wrapper.live:focus .match-fixture__score span,.match-fixture__wrapper.live:hover .match-fixture__score span {
+    color: #37003c
+}
+
+.match-fixture__wrapper.live:focus .match-fixture__minutes strong,.match-fixture__wrapper.live:hover .match-fixture__minutes strong {
+    -webkit-text-fill-color: #fff;
+    text-fill-color: #fff
+}
+
+.match-fixture.live .match-fixture__score,.match-fixture.live:focus .match-fixture__container,.match-fixture.live:hover .match-fixture__container {
+    background: linear-gradient(245.98deg,#ff6900 -48.99%,#ff6604 -32.53%,#ff6010 -14.01%,#ff5625 4.51%,#ff4743 23.03%,#ff3468 41.55%,#ff2882 53.89%,#963cff 156.77%)
+}
+
+.match-fixture__container {
+    display: flex;
+    padding: 1.05rem 0;
+    align-items: center;
+    position: relative;
+    color: #37003c;
+    width: 100%;
+    border-bottom: .1rem solid #f5f2f5;
+    cursor: pointer
+}
+
+.match-fixture__container:hover {
+    background: linear-gradient(98.5deg,#05f0ff -46.16%,#7367ff 42.64%,#963cff 70.3%);
+    color: #fff
+}
+
+.match-fixture__container:hover .match-fixture__end-icon {
+    margin-right: .8rem;
+    margin-left: 1.6rem
+}
+
+.match-fixture__container:hover .match-fixture__penalties p,.match-fixture__container:hover .match-fixture__stadium-name,.match-fixture__container:hover .match-fixture__team-name {
+    color: #fff
+}
+
+@media (max-width: 1180px) {
+    .match-fixture__stadium-name {
+        margin-left:8rem
+    }
+}
+
+@media (max-width: 1068px) {
+    .match-fixture__stadium-name {
+        margin-left:3.6rem
+    }
+}
+
+@media (max-width: 1023px) {
+    .match-fixture__container {
+        flex-wrap:wrap
+    }
+
+    .match-fixture__teams {
+        width: 100%;
+        min-width: 100%;
+        margin-left: 0
+    }
+
+    .match-fixture__team:first-of-type {
+        padding-right: 6.3rem
+    }
+
+    .match-fixture__team:first-of-type .badge {
+        right: 2.6rem
+    }
+
+    .match-fixture__team:not(:first-of-type) {
+        padding-left: 6.3rem
+    }
+
+    .match-fixture__team:not(:first-of-type) .badge {
+        left: 2.7rem
+    }
+
+    .match-fixture__penalties {
+        margin-top: .8rem
+    }
+
+    .match-fixture__penalties p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: -.04rem
+    }
+
+    .match-fixture__score,.match-fixture time {
+        width: 4.3rem;
+        height: 2.5rem;
+        font-size: 1.4rem
+    }
+
+    .match-fixture__end-container {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center
+    }
+
+    .match-fixture__end-container .broadcasterContainer {
+        margin-top: 1rem
+    }
+
+    .match-fixture__end-icon {
+        position: absolute;
+        right: 0;
+        margin-right: 0;
+        margin-left: 0
+    }
+
+    .match-fixture__fixture-broadcast {
+        margin: 0
+    }
+
+    .match-fixture__team-name {
+        font-size: 1.2rem
+    }
+
+    .match-fixture__quick-view,.match-fixture__stadium-name {
+        display: none
+    }
+}
+
+@media (max-width: 640px) {
+    .match-fixture--abridged.match-fixture .match-fixture__team:first-of-type .badge,.match-fixture--abridged.match-fixture .match-fixture__team:not(:first-of-type) .badge {
+        margin-top:-.4rem
+    }
+
+    .match-fixture--abridged.match-fixture .match-fixture__team-name {
+        font-size: 1.2rem;
+        line-height: 1.8rem
+    }
+
+    .match-fixture--abridged.match-fixture .match-fixture__minutes {
+        left: 1.6rem;
+        top: 1.3rem
+    }
+}
+
+.mcStatsTab .previous-meetings .matchFixtureContainer:last-child .match-fixture__container {
+    border-bottom: none
+}
+
+.mcStatsTab .previous-meetings .match-fixture__container {
+    padding-right: 4rem
+}
+
+@media (max-width: 1023px) {
+    .mcStatsTab .previous-meetings .match-fixture__container {
+        padding-right:0
+    }
+}
+
+.fixtures-modal .past-matches .fixtures-modal__col .match-fixture__teams {
+    min-width: auto;
+    margin-left: 0;
+    width: 100%;
+    justify-content: center
+}
+
+.fixtures-modal .past-matches .fixtures-modal__col .match-fixture__teams .arrow-right-purple {
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: .7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: 100%
+}
+
+.match-fixture {
+    text-decoration: none;
+    position: relative
+}
+
+.match-fixture--large .match-fixture__teams {
+    width: 45%
+}
+
+.match-fixture--no-link {
+    pointer-events: none
+}
+
+.match-fixture--small.match-fixture {
+    border: .1rem solid #ebe5eb;
+    border-radius: .4rem
+}
+
+.match-fixture__teams {
+    display: flex;
+    align-items: center;
+    width: 45.9rem;
+    margin-left: 3.2rem;
+    min-height: 2.5rem;
+    position: relative;
+    font-size: 0
+}
+
+.match-fixture__teams.has-penalties {
+    flex-wrap: wrap
+}
+
+.referee-appointments-summary .match-fixture__teams time {
+    font-family: PremierSans-Regular,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+    border: .1rem solid #ebe5eb;
+    border-radius: .4rem;
+    width: 5.2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto
+}
+
+.referee-appointments-summary .match-fixture__score,.referee-appointments-summary .match-fixture time {
+    top: 0!important
+}
+
+@media (max-width: 1023px) {
+    .referee-appointments-summary .match-fixture__teams {
+        width:auto;
+        min-width: 36rem
+    }
+}
+
+
+.tooltipContainer.tooltip-link:focus .match-fixture__team-name,.tooltipContainer.tooltip-link:focus .match-fixture time,.tooltipContainer.tooltip-link:hover .match-fixture__team-name,.tooltipContainer.tooltip-link:hover .match-fixture time {
+    color: #fff
+}
+
+.match-fixture time {
+    margin: 0 .4rem;
+}
+
+.match-fixture:hover .ref{
+    color: #fff
+}
+
+.match-fixture .badge {
+    height: 3rem
+}
+
+.league-table__expandable-container .match-fixture .badge {
+    height: 3rem
+}
+
+@media (max-width: 640px) {
+    .fixtures-abridged.clubs .match-fixture--abridged .match-fixture__team:first-of-type .badge,.fixtures-abridged.clubs .match-fixture--abridged .match-fixture__team:not(:first-of-type) .badge {
+        margin-top:-.2rem
+    }
+}
+
+@media (min-width: 800px) {
+    .articleWidget .fixtures-abridged .match-fixture--abridged {
+        justify-content:flex-start;
+        flex-wrap: nowrap
+    }
+
+    .articleWidget .fixtures-abridged .match-fixture--abridged:last-child:after {
+        content: none
+    }
+
+    .articleWidget .fixtures-abridged .match-fixture--abridged .match-fixture__team {
+        width: 25%
+    }
+
+    .articleWidget .fixtures-abridged .match-fixture--abridged .match-fixture__team-name {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-family: PremierSans-Regular,Arial,Helvetica Neue,Helvetica,sans-serif;
+        font-weight: 400
+    }
+
+    .articleWidget .fixtures-abridged .match-fixture--abridged .match-fixture__team-name--full {
+        display: block!important
+    }
+
+    .articleWidget .fixtures-abridged .match-fixture--abridged .match-fixture__team-name--abbr {
+        display: none!important
+    }
+
+    .articleWidget .fixtures-abridged .match-fixture--abridged .match-fixture__score {
+        margin: 0 -1.4rem;
+        position: relative;
+        top: inherit
+    }
+
+    .articleWidget .fixtures-abridged .match-fixture--abridged .match-fixture__minutes {
+        left: 1rem;
+        top: 1.7rem
+    }
+
+    .articleWidget .fixtures-abridged .match-fixture--abridged .match-fixture__summary-broadcasters {
+        flex-grow: 1;
+        justify-content: flex-end;
+        margin-right: 3.6rem;
+        width: auto
+    }
+
+    .articleWidget .fixtures-abridged .match-fixture--abridged .match-fixture__summary-broadcasters .broadcasterContainer {
+        margin-top: 0
+    }
+
+    .articleWidget .fixtures-abridged .match-fixture--abridged .match-fixture__icon {
+        fill: #37003c;
+        height: 1.6rem;
+        width: 1.6rem;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+
+    .articleWidget .fixtures-abridged .match-fixture--abridged time {
+        margin: 0 -1.4rem;
+        position: relative;
+        top: inherit
+    }
+
+    .articleWidget .fixtures-abridged .match-fixture--abridged .global-btn {
+        margin-top: 0
+    }
+}
+
+.articleWidget.left .fixtures-abridged .match-fixture__team:first-of-type .badge,.articleWidget.left .fixtures-abridged .match-fixture__team:not(:first-of-type) .badge,.articleWidget.right .fixtures-abridged .match-fixture__team:first-of-type .badge,.articleWidget.right .fixtures-abridged .match-fixture__team:not(:first-of-type) .badge {
+    margin-top: -.4rem
+}
+
+.articleWidget.left .fixtures-abridged .match-fixture__minutes,.articleWidget.right .fixtures-abridged .match-fixture__minutes {
+    left: 1.6rem;
+    top: 1.3rem
+}
+
+.articleWidget.left .fixtures-abridged .match-fixture__team-name,.articleWidget.right .fixtures-abridged .match-fixture__team-name {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-family: PremierSans-Heavy,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 400
+}
+
+.articleWidget.left .fixtures-abridged .match-fixture__team,.articleWidget.right .fixtures-abridged .match-fixture__team {
+    width: 40%
+}
+
+.articleWidget.left .fixtures-abridged .match-fixture__team-name--full,.articleWidget.right .fixtures-abridged .match-fixture__team-name--full {
+    display: none!important
+}
+
+.articleWidget.left .fixtures-abridged .match-fixture__team-name--abbr,.articleWidget.right .fixtures-abridged .match-fixture__team-name--abbr {
+    display: block!important
+}
+
+.match-fixture--abridged.match-fixture .match-fixture__team:first-of-type {
+    padding-right: 6.6rem
+}
+
+.match-fixture--abridged.match-fixture .match-fixture__team:first-of-type .badge {
+    right: 3rem
+}
+
+.match-fixture--abridged.match-fixture .match-fixture__team:not(:first-of-type) {
+    padding-left: 6.6rem
+}
+
+.match-fixture--abridged.match-fixture .match-fixture__team:not(:first-of-type) .badge {
+    left: 3rem
+}
+
+.match-fixture--abridged.match-fixture .match-fixture__team-name {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-family: PremierSans-Heavy,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 400
+}
+
+.match-fixture__team {
+    width: 50%;
+    padding-left: 7.8rem;
+    position: relative
+}
+
+.match-fixture__team:not(:first-of-type) .badge {
+    left: 4rem;
+    top: -.4rem
+}
+
+.match-fixture__team:first-of-type {
+    text-align: right;
+    padding-left: 0;
+    padding-right: 7.8rem
+}
+
+.match-fixture__team:first-of-type .badge {
+    right: 3.7rem;
+    top: -.4rem
+}
+
+.match-fixture__team-name {
+    font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 400;
+    color: #37003c;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: -.04rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%
+}
+
+.match-fixture__team-name abbr {
+    text-decoration: none
+}
+
+.fixtures-modal .past-matches .fixtures-modal__col .match-fixture__team-name {
+    width: auto;
+    font-size: 1.4rem;
+    margin: 0 .3rem;
+    font-family: PremierSans-Heavy,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 400;
+    min-width: 3.5rem;
+    color: #37003c
+}
+
+.match-fixture--small.match-fixture:focus .match-fixture__minutes,.match-fixture--small.match-fixture:focus .match-fixture__team-name,.match-fixture--small.match-fixture:focus time,.match-fixture--small.match-fixture:hover .match-fixture__minutes,.match-fixture--small.match-fixture:hover .match-fixture__team-name,.match-fixture--small.match-fixture:hover time {
+    color: #fff
+}
+
+.match-fixture--small.match-fixture .match-fixture__team-name {
+    font-family: PremierSans-Heavy,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem
+}
+
+.tooltipContainer.tooltip-link:focus .match-fixture__team-name,.tooltipContainer.tooltip-link:focus .match-fixture time,.tooltipContainer.tooltip-link:hover .match-fixture__team-name,.tooltipContainer.tooltip-link:hover .match-fixture time {
+    color: #fff
+}
+
+.match-fixture .badge {
+    position: absolute
+}
+
+.match-fixture__score,.match-fixture time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: .4rem;
+    width: 4.8rem;
+    height: 2.8rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    line-height: 3.2rem
+}
+
+.match-fixture time {
+    background: transparent;
+    font-size: 1.6rem;
+    width: 5.2rem;
+    border: .1rem solid #ebe5eb
+}
+
+.match-fixture.live .match-fixture__score {
+    font-family: PremierSans-Heavy,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 400
+}
+
+.match-fixture.live .match-fixture__score,.match-fixture.live:focus .match-fixture__container,.match-fixture.live:hover .match-fixture__container {
+    background: linear-gradient(245.98deg,#ff6900 -48.99%,#ff6604 -32.53%,#ff6010 -14.01%,#ff5625 4.51%,#ff4743 23.03%,#ff3468 41.55%,#ff2882 53.89%,#963cff 156.77%)
+}
+
+.match-fixture.live:focus .match-fixture__score,.match-fixture.live:hover .match-fixture__score {
+    background: #fff;
+    color: #37003c
+}
+
+.match-fixture.live:focus .match-fixture__score span,.match-fixture.live:hover .match-fixture__score span {
+    color: #37003c
+}
+
+.match-fixture--abridged.match-fixture.live .match-fixture__score,.match-fixture--abridged.match-fixture.live:focus,.match-fixture--abridged.match-fixture.live:hover {
+    background: linear-gradient(245.98deg,#ff6900 -48.99%,#ff6604 -32.53%,#ff6010 -14.01%,#ff5625 4.51%,#ff4743 23.03%,#ff3468 41.55%,#ff2882 53.89%,#963cff 156.77%)
+}
+
+.match-fixture--abridged.match-fixture .match-fixture__score,.match-fixture--abridged.match-fixture time {
+    height: 2.5rem;
+    width: 4.3rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    top: 1.1rem
+}
+
+.match-fixture.live:focus .match-fixture__minutes strong,.match-fixture.live:hover .match-fixture__minutes strong {
+    -webkit-text-fill-color: #fff;
+    text-fill-color: #fff
+}
+
+.match-fixture__score,.match-fixture time {
+        width: 4.3rem;
+        height: 2.5rem;
+        font-size: 1.4rem
+    }
+
+    .match-fixture__end-container {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center
+    }
+
+
+.league-table__expandable-container .match-fixture {
+    width: 27rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .4rem .6rem
+}
+
+@media (max-width: 900px) {
+    .referee-appointments-summary .matchAbridged {
+        flex-direction:column;
+        padding: 1.3rem 0 0;
+        border: .1rem solid #ebe5eb;
+        border-radius: .8rem;
+        margin-bottom: 1.6rem
+    }
+
+    .referee-appointments-summary .matchAbridged:hover .ref {
+        color: #37003c
+    }
+
+    .referee-appointments-summary .referee-header .moreBtn {
+        position: relative
+    }
+
+    .referee-appointments-summary.fixturesAbridgedContainer .subHeader {
+        margin-bottom: 0
+    }
+
+    .referee-appointments-summary .matchAbridged time,.referee-appointments-summary .matchListContainer time {
+        font-size: 1.6rem;
+        line-height: 2.4rem
+    }
+
+    .referee-appointments-summary .matchAbridged .referees,.referee-appointments-summary .matchListContainer .referees {
+        margin: .8rem 0 0;
+        border: 0;
+        border-top: .1rem solid #ebe5eb;
+        display: block;
+        width: 100%
+    }
+
+    .referee-appointments-summary .matchAbridged .referees .ref,.referee-appointments-summary .matchListContainer .referees .ref {
+        width: 20%;
+        padding: .8rem 0;
+        color: #37003c;
+        width: 50%
+    }
+
+    .referee-appointments-summary .matchAbridged .referees .refLabelMobile,.referee-appointments-summary .matchListContainer .referees .refLabelMobile {
+        display: block
+    }
+
+    .referee-appointments-summary .matchAbridged .referees--noOfficials,.referee-appointments-summary .matchListContainer .referees--noOfficials {
+        text-align: center;
+        padding: .8rem
+    }
+
+    .referee-appointments-summary .refereesContainer {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-right: 2.8rem
+    }
+
+    .referee-appointments-summary .refereesContainer.has-referees {
+        margin-right: 0
+    }
+
+    .referee-appointments-summary .refereesContainer .svg {
+        display: none
+    }
+
+    .referee-appointments-summary .match-fixture__minutes {
+        height: 5rem
+    }
+
+    .referee-appointments-summary .match-fixture__team {
+        padding-left: 7.3rem
+    }
+
+    .referee-appointments-summary .match-fixture__team:first-of-type {
+        padding-left: 0;
+        padding-right: 7.3rem
+    }
+
+    .referee-appointments-summary .match-fixture__team:first-of-type .badge {
+        right: 3.2rem
+    }
+
+    .referee-appointments-summary .match-fixture__team:not(:first-of-type) .badge {
+        left: 3.2rem
+    }
+
+    .referee-appointments-summary .match-fixture__teams {
+        min-width: 0!important
+    }
+
+    .referee-appointments-summary .match-fixture__short-name {
+        overflow: visible
+    }
+
+    .referee-appointments-summary .refereeIndex .managerName {
+        font-size: 1.2rem
+    }
+}
+
+@media (max-width: 640px) {
+    .match-fixture--abridged.match-fixture .match-fixture__team:first-of-type .badge,.match-fixture--abridged.match-fixture .match-fixture__team:not(:first-of-type) .badge {
+        margin-top:-.4rem
+    }
+
+    .match-fixture--abridged.match-fixture .match-fixture__team-name {
+        font-size: 1.2rem;
+        line-height: 1.8rem
+    }
+
+    .match-fixture--abridged.match-fixture .match-fixture__minutes {
+        left: 1.6rem;
+        top: 1.3rem
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1536px) {
+    .u-hide-wide {
+        display:none!important
+    }
+}
+
+@media (max-width: 1025px) {
+    .u-hide-desktop {
+        display:none
+    }
+}
+
+@media (min-width: 1025px) {
+    .u-show-desktop {
+        display:none
+    }
+}
+
+@media (max-width: 840px) {
+    .u-hide-tablet {
+        display:none!important
+    }
+}
+
+@media (min-width: 840px) {
+    .u-show-tablet {
+        display:none!important
+    }
+}
+
+@media (max-width: 640px) {
+    .u-hide-phablet {
+        display:none!important
+    }
+}
+
+@media (min-width: 640px) {
+    .u-show-phablet {
+        display:none!important
+    }
+}
+
+@media (max-width: 1025px) {
+    .u-hide-desktop {
+        display:none!important
+    }
+}
+
+@media (min-width: 415px) {
+    .u-show-mobile {
+        display:none
+    }
+}
+
+@media (max-width: 415px) {
+    .u-hide-mobile {
+        display:none
+    }
+}
+
+@media (min-width: 840px) {
+    .u-show-until-tablet {
+        display:none
+    }
+}
+
+@media (max-width: 480px) {
+    .u-hide-mobile-lg {
+        display:none
+    }
+}
