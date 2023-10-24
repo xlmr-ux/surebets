@@ -714,6 +714,129 @@
     line-height: 2.4rem
 }
 
+.match-fixture--abridged.match-fixture:focus .match-fixture__minutes,.match-fixture--abridged.match-fixture:focus .match-fixture__team-name,.match-fixture--abridged.match-fixture:focus time,.match-fixture--abridged.match-fixture:hover .match-fixture__minutes,.match-fixture--abridged.match-fixture:hover .match-fixture__team-name,.match-fixture--abridged.match-fixture:hover time {
+    color: #fff
+}
+
+.match-fixture__match-info {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+    color: #37003c;
+    display: block;
+    margin-bottom: 1rem
+}
+
+.match-fixture__team-score-container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.matchAbridged:not(.disabled):focus .match-fixture__team-name,.matchAbridged:not(.disabled):focus .refereesContainer .ref,.matchAbridged:not(.disabled):focus .refereesContainer .referees--noOfficials,.matchAbridged:not(.disabled):hover .match-fixture__team-name,.matchAbridged:not(.disabled):hover .refereesContainer .ref,.matchAbridged:not(.disabled):hover .refereesContainer .referees--noOfficials {
+    color: #fff
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+/* change html when its a small device using media query */
+
+@media (max-width: 900px) {
+    html {
+        font-size: 62.5%
+    }
+}
+
+body {
+    background: #fff;
+    font-family: PremierSans-Regular,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 400;
+    color: #37003c;
+    -webkit-text-size-adjust: 100%;
+    font-size: 1.4rem;
+    min-width: 320px
+}
+
+body.fixedBody {
+    overflow: hidden;
+    height: 100vh
+}
+
+ol,ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+ol li,ul li {
+    list-style-type: none
+}
+
+dd {
+    margin-left: 0
+}
+
+.match-fixture__score,.match-fixture time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: .4rem;
+    width: 4.8rem;
+    height: 2.8rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    line-height: 3.2rem
+}
+
+.match-fixture time {
+    background: transparent;
+    font-size: 1.6rem;
+    width: 5.2rem;
+    border: .1rem solid #ebe5eb
+}
+
+.match-fixture__short-name {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.match-fixture__abbr {
+    display: none
+}
+
+.match-fixture .badge {
+    position: absolute
+}
+
+.match-fixture--small.match-fixture .match-fixture__team,.match-fixture--small.match-fixture .match-fixture__team:first-of-type {
+    padding: 0;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: .6rem
+}
+
+.match-fixture--small.match-fixture .match-fixture__team .badge,.match-fixture--small.match-fixture .match-fixture__team:first-of-type .badge {
+    left: 0!important;
+    position: relative;
+    top: 0;
+    margin-top: 0
+}
+
+
+table {
+    font-size: inherit
+}
+
+
 .tooltipContainer.tooltip-link:focus .match-fixture__team-name,.tooltipContainer.tooltip-link:focus .match-fixture time,.tooltipContainer.tooltip-link:hover .match-fixture__team-name,.tooltipContainer.tooltip-link:hover .match-fixture time {
     color: #fff
 }
@@ -991,4 +1114,31 @@
     .u-hide-mobile-lg {
         display:none
     }
+}
+
+
+/* Add table hover effect on the tr */
+.game-row{
+    cursor: pointer;
+    color: #37003c;
+    padding: 20px;
+    border-bottom: 1px solid #ebe5eb;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 15px;
+}
+.game-row:hover {
+        background: linear-gradient(245.98deg,#ff6900 -48.99%,#ff6604 -32.53%,#ff6010 -14.01%,#ff5625 4.51%,#ff4743 23.03%,#ff3468 41.55%,#ff2882 53.89%,#963cff 156.77%);
+        color: #fff;
+}
+
+.time {
+    border: gray 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+table td {
+    padding: 10px;
+    height: 50px;
+    vertical-align: middle;
 }
